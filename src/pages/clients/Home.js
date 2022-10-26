@@ -1,17 +1,34 @@
 import React from "react";
 import NavBar from "../../components/clients/NavBar";
 import fishimage from "../../assets/images/fish2.jpg";
-import { BsPlayCircle, BsWindows, BsStack } from "react-icons/bs";
+import {
+  BsPlayCircle,
+  BsAlarm,
+  BsStack,
+  BsArrowRightCircle,
+} from "react-icons/bs";
 import { GiDeliveryDrone } from "react-icons/gi";
+import fish from "../../assets/images/fish4.jpg";
 import { Link } from "react-router-dom";
+import ItemsCard from "../../components/clients/ItemsCard";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardSubtitle,
+  CardText,
+  CardTitle,
+} from "reactstrap";
+import Cards from "../../components/clients/Cards";
+import LargeText from "../../components/clients/LargeText";
 
 const Home = () => {
   return (
     <>
       <div className="bg bg_color">
         <NavBar />
-        <div className="main d-sm-flex justify-content-center align-items-center">
-          <div className="col-sm-6">
+        <div className="main d-md-flex justify-content-center align-items-center">
+          <div className="col-sm-6 d-none">
             {/* <img
               src={fishimage}
               alt=""
@@ -40,31 +57,24 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="items_card card border-0 shadow-lg d-sm-flex d-none">
-          <div
-            className="d-flex justify-content-around align-items-center"
-            style={{ height: "4rem" }}
-          >
-            <div className="d-flex align-items-center">
-              <GiDeliveryDrone />
-              <span className="mx-1">Home Delivery</span>
+        <ItemsCard />
+      </div>
+      <section className="bg ">
+        <div className="container">
+          <LargeText coloredText="Frequently" text="Purchased" />
+          <div className="row gy-4">
+            <div className="col-sm-4">
+              <Cards />
             </div>
-            <div className="d-flex align-items-center">
-              <BsWindows />
-              <span className="mx-1">Window</span>
+            <div className="col-sm-4">
+              <Cards />
             </div>
-            <div className="d-flex align-items-center">
-              <BsStack />
-              <span className="mx-1">Products</span>
-            </div>
-            <div className="d-flex align-items-center">
-              <GiDeliveryDrone />
-              <span className="mx-1">Home Delivery</span>
+            <div className="col-sm-4">
+              <Cards />
             </div>
           </div>
         </div>
-      </div>
-      <section className="bg "></section>
+      </section>
     </>
   );
 };
