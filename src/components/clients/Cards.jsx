@@ -12,7 +12,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 
 const Cards = () => {
   return (
-    <Card className="shadow border-0">
+    <Card className="rounded card_shadow">
       <img alt="Sample" src={fish} />
       <CardBody>
         <CardTitle tag="h5">Red Fish</CardTitle>

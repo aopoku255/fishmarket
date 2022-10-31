@@ -21,6 +21,7 @@ import {
 } from "reactstrap";
 import Cards from "../../components/clients/Cards";
 import LargeText from "../../components/clients/LargeText";
+import ItemSalesCard from "../../components/clients/ItemSalesCard";
 
 const Home = () => {
   return (
@@ -59,7 +60,7 @@ const Home = () => {
         </div>
         <ItemsCard />
       </div>
-      <section className="bg ">
+      <section className="bg">
         <div className="container">
           <LargeText coloredText="Frequently" text="Purchased" />
           <div className="row gy-4">
@@ -75,6 +76,24 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <div className="card_container">
+        <h1 className="deep_text text-uppercase">Don't miss this chance...!</h1>
+        <h3 className="text_below">Buy Below The Normal Price</h3>
+        <button className="btn btn-light mt-4 btn_text">Open Window</button>
+      </div>
+      <div className="container">
+        <LargeText coloredText="Frequently" text="Purchased" />
+        <div className="display_grid">
+          <ItemSalesCard />
+          <ItemSalesCard />
+          <ItemSalesCard />
+          <ItemSalesCard />
+          <ItemSalesCard />
+          <ItemSalesCard />
+          <ItemSalesCard />
+          <ItemSalesCard />
+        </div>
+      </div>
     </>
   );
 };
