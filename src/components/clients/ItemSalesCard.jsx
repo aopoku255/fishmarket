@@ -12,7 +12,7 @@ import { BsArrowRightCircle, BsStarFill } from "react-icons/bs";
 
 const ItemSalesCard = () => {
   return (
-    <Card className="rounded ">
+    <Card className="rounded shadow-lg">
       <img alt="Sample" src={fish} />
       <CardBody>
         <h6 className="text-center">Tilapia</h6>

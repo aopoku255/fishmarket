@@ -20,7 +20,7 @@ const NavBar = () => {
             Window
           </NavLink>
           <div className="header_h-line"></div>
-          <NavLink href="" className=" bold-text header_signup__btn">
+          <NavLink href="/login" className=" bold-text header_signup__btn">
             sign in
           </NavLink>
           {/* <NavLink href="" className=" bold-text  header_signup__btn fill">

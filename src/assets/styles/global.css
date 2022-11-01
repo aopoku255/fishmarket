@@ -56,17 +56,22 @@ a{
 }
 
 .header .header_icons{
-    color: rgba(255, 255, 255, 0.566);
+    color: rgba(255, 255, 255, 1);
 }
 
 .header_signup__btn{
-    border-radius: 2px;
-    font-weight: 400;
-    font-size: 12px;
-    color: #000;
-    background-color: #ffffffd7;
-    padding: 0 0.5rem 0.2rem 0.5rem;
+   font-size: 10px;
+   background-color: #fff;
+   color: #224020;
+   padding: 0 0.5rem;
+   border-radius: 2px;
+   font-weight: 700;
+   border: 1px solid #fff;
+}
 
+.header_signup__btn:hover{
+    background-color: transparent;
+    color: #fff;
 }
 
 .btn_color{
@@ -204,6 +209,113 @@ a{
     gap: 2rem;
 }
 
+/* Login */
+.login_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(235, 2, 2, 0.513), rgba(105, 0, 243, 0.363));
+
+}
+
+.login_card{
+    width: 15rem;
+    height: 20rem;
+    /* background: linear-gradient(45deg, rgba(235, 2, 2, 0.513), rgba(105, 0, 243, 0.363)); */
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(255, 192, 203, 0.465)
+}
+
+.logo{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+
+}
+
+.login_card__text{
+    font-size: 0.5rem;
+    color: #fff;
+}
+
+.form_label{
+    font-size: 10px;
+}
+
+input{
+    border: none;
+}
+
+.form_control{
+   border: none;
+   margin-bottom: 0.5rem;
+   border-radius: 3px;
+   background-color: rgba(255, 255, 255, 0.731);
+   color: #242424;
+   font-size: 12px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 0.2rem 0 0.2rem 0.5rem;
+   
+}
+.form_control:focus{
+    border: 1px solid pink;
+    outline: none;
+   
+}
+
+.form_control::placeholder{
+    font-size: 10px ;
+    color: rgba(0, 0, 0, 0.402);
+}
+
+.form_control{
+    border: 0.5px solid #333;
+}
+
+.small_text{
+    font-size: 7px;
+}
+.forgotten{
+    color: #fff
+}
+.forgotten:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.submit{
+    border: none; 
+    margin-top: 0.5rem;
+    font-size: 10px;
+    padding: 0.25rem 0;
+    border-radius: 2px;
+    background: linear-gradient(45deg, rgba(235, 2, 2, 0.513), rgba(105, 0, 243, 0.363));
+    color: #fff;
+}
+
+.google_btn{
+    background: #242424;
+}
+.password{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    position: absolute;
+    top: 6px;
+    font-size: 12px;
+    right: 5px;
+    color: #6c757d;
+    cursor: pointer;
+    /* padding-left: 5px; */
+}
 @media (max-width: 996px) {
     .items_card{
         margin: 0;
