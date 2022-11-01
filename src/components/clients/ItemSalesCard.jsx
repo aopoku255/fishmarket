@@ -30,7 +30,7 @@ const ItemSalesCard = () => {
         </div>
         <div className="d-flex align-items-center justify-content-between">
           <div className="">GH₵ 25.00</div>
-          <div className=" btn btn-outline-dark rounded-pill px-3">
+          <div className=" btn btn-outline-dark rounded-pill text-nowrap px-3">
             Add to cart
           </div>
         </div>
