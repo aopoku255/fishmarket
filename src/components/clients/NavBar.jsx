@@ -2,18 +2,23 @@ import React from "react";
 import { Navbar, NavbarBrand, NavbarToggler, NavLink } from "reactstrap";
 import { BsSearch, BsBag, BsList } from "react-icons/bs";
 import { Link } from "react-router-dom";
-const NavBar = () => {
+import { useState } from "react";
+const NavBar = (props) => {
+  const [focus, setFocus] = useState(false);
+  const handleFocus = () => {
+    setFocus(true);
+  };
   return (
-    <Navbar>
+    <Navbar className={props.bg}>
       <div className="container d-flex justify-content-between align-items-center">
         <NavbarBrand href="/" className="text-white">
           FarmLine
         </NavbarBrand>
         <div className="d-sm-flex d-none align-items-center header">
-          <NavLink href="" className="header_navs bold-text ">
+          <NavLink href="" className="header_navs bold-text">
             Home
           </NavLink>
-          <NavLink href="" className="header_navs bold-text ">
+          <NavLink href="/products" className="header_navs bold-text ">
             Products
           </NavLink>
           <NavLink href="" className="header_navs bold-text ">

@@ -11,9 +11,10 @@
 .bg{
     height: 100%;
     min-height: 100%;
-  position: relative;
+    position: relative;
 }
 .bg_color{
+    background-color: rgba(51, 128, 255, 0.15);
     background-image: url(../images/fish.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,11 +33,54 @@
     z-index: -1;
     background: linear-gradient(45deg, rgba(235, 2, 2, 0.513), rgba(105, 0, 243, 0.363));
 }
-
+.navbar_bg{
+    background-color: #000;
+}
+.text_header_bold{
+    font-weight: 900;
+}
 a{
     color: #000;
     text-decoration: none;
 }
+
+.fish_card_container{
+    position: relative;
+    /* height: 10rem; */
+}
+
+.fish_card_container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background-color: #000; */
+
+}
+
+
+.open_more{
+    position: absolute;
+    /* background-color: #000; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    z-index: 99;
+    color: #fff;
+}
+
+.fish_card_container:hover .fish_card_container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+}
+
 
 .header .header_navs{
     margin: 0 1rem;
@@ -220,8 +264,8 @@ a{
 }
 
 .login_card{
-    width: 15rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     /* background: linear-gradient(45deg, rgba(235, 2, 2, 0.513), rgba(105, 0, 243, 0.363)); */
     color: rgb(0, 0, 0);
     border-radius: 10px;
@@ -250,7 +294,7 @@ input{
 
 .form_control{
    border: none;
-   margin-bottom: 0.5rem;
+   margin-bottom: 1rem;
    border-radius: 3px;
    background-color: rgba(255, 255, 255, 0.731);
    color: #242424;
@@ -315,6 +359,35 @@ input{
     color: #6c757d;
     cursor: pointer;
     /* padding-left: 5px; */
+}
+
+.footer{
+    margin-top: 2rem;
+    background-color: #201F1F;
+}
+
+.footer h1{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.footer_center{
+    height: 15rem;
+    padding: 2rem 1rem 0 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    
+}
+.footer_bottom{
+    border-top: 2px solid #fff;
+    height: 5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 @media (max-width: 996px) {

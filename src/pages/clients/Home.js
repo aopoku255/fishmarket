@@ -22,6 +22,7 @@ import {
 import Cards from "../../components/clients/Cards";
 import LargeText from "../../components/clients/LargeText";
 import ItemSalesCard from "../../components/clients/ItemSalesCard";
+import Footer from "../../components/clients/Footer";
 
 const Home = () => {
   return (
@@ -94,6 +95,7 @@ const Home = () => {
           <ItemSalesCard />
         </div>
       </div>
+      <Footer />
     </>
   );
 };
