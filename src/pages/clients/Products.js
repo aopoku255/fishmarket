@@ -29,11 +29,11 @@ const Products = () => {
               <div className="card_text bg-dark text-white pt-2">
                 <h4 className="text-center">Red Fish</h4>
                 <div className="d-flex  px-2">
-                  <AiFillTag size={30} />
+                  <AiFillTag size={20} />
                   <p className=" mx-2">GHC 1200 - GHC 5000</p>
                 </div>
                 <div className="d-flex  px-2">
-                  <HiOutlineUserGroup size={30} />
+                  <HiOutlineUserGroup size={20} />
                   <p className=" mx-2">10 selers</p>
                 </div>
               </div>
@@ -52,11 +52,11 @@ const Products = () => {
               <div className="card_text bg-dark text-white pt-2">
                 <h4 className="text-center">Red Fish</h4>
                 <div className="d-flex  px-2">
-                  <AiFillTag size={30} />
+                  <AiFillTag size={20} />
                   <p className=" mx-2">GHC 1200 - GHC 5000</p>
                 </div>
                 <div className="d-flex  px-2">
-                  <HiOutlineUserGroup size={30} />
+                  <HiOutlineUserGroup size={20} />
                   <p className=" mx-2">10 selers</p>
                 </div>
               </div>
@@ -75,11 +75,11 @@ const Products = () => {
               <div className="card_text bg-dark text-white pt-2">
                 <h4 className="text-center">Red Fish</h4>
                 <div className="d-flex  px-2">
-                  <AiFillTag size={30} />
+                  <AiFillTag size={20} />
                   <p className=" mx-2">GHC 1200 - GHC 5000</p>
                 </div>
                 <div className="d-flex  px-2">
-                  <HiOutlineUserGroup size={30} />
+                  <HiOutlineUserGroup size={20} />
                   <p className=" mx-2">10 selers</p>
                 </div>
               </div>
@@ -98,11 +98,11 @@ const Products = () => {
               <div className="card_text bg-dark text-white pt-2">
                 <h4 className="text-center">Red Fish</h4>
                 <div className="d-flex  px-2">
-                  <AiFillTag size={30} />
+                  <AiFillTag size={20} />
                   <p className=" mx-2">GHC 1200 - GHC 5000</p>
                 </div>
                 <div className="d-flex  px-2">
-                  <HiOutlineUserGroup size={30} />
+                  <HiOutlineUserGroup size={20} />
                   <p className=" mx-2">10 selers</p>
                 </div>
               </div>
@@ -121,11 +121,11 @@ const Products = () => {
               <div className="card_text bg-dark text-white pt-2">
                 <h4 className="text-center">Red Fish</h4>
                 <div className="d-flex  px-2">
-                  <AiFillTag size={30} />
+                  <AiFillTag size={20} />
                   <p className=" mx-2">GHC 1200 - GHC 5000</p>
                 </div>
                 <div className="d-flex  px-2">
-                  <HiOutlineUserGroup size={30} />
+                  <HiOutlineUserGroup size={20} />
                   <p className=" mx-2">10 selers</p>
                 </div>
               </div>
@@ -144,11 +144,11 @@ const Products = () => {
               <div className="card_text bg-dark text-white pt-2">
                 <h4 className="text-center">Red Fish</h4>
                 <div className="d-flex  px-2">
-                  <AiFillTag size={30} />
+                  <AiFillTag size={20} />
                   <p className=" mx-2">GHC 1200 - GHC 5000</p>
                 </div>
                 <div className="d-flex  px-2">
-                  <HiOutlineUserGroup size={30} />
+                  <HiOutlineUserGroup size={20} />
                   <p className=" mx-2">10 selers</p>
                 </div>
               </div>
@@ -167,11 +167,11 @@ const Products = () => {
               <div className="card_text bg-dark text-white pt-2">
                 <h4 className="text-center">Red Fish</h4>
                 <div className="d-flex  px-2">
-                  <AiFillTag size={30} />
+                  <AiFillTag size={20} />
                   <p className=" mx-2">GHC 1200 - GHC 5000</p>
                 </div>
                 <div className="d-flex  px-2">
-                  <HiOutlineUserGroup size={30} />
+                  <HiOutlineUserGroup size={20} />
                   <p className=" mx-2">10 selers</p>
                 </div>
               </div>
@@ -190,11 +190,11 @@ const Products = () => {
               <div className="card_text bg-dark text-white pt-2">
                 <h4 className="text-center">Red Fish</h4>
                 <div className="d-flex  px-2">
-                  <AiFillTag size={30} />
+                  <AiFillTag size={20} />
                   <p className=" mx-2">GHC 1200 - GHC 5000</p>
                 </div>
                 <div className="d-flex  px-2">
-                  <HiOutlineUserGroup size={30} />
+                  <HiOutlineUserGroup size={20} />
                   <p className=" mx-2">10 selers</p>
                 </div>
               </div>
@@ -202,7 +202,6 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

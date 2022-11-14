@@ -40,7 +40,9 @@ const Home = () => {
             /> */}
           </div>
           <div className="col-sm-6 p-sm-0 p-3">
-            <h1 className="text_header">Fish Delivery & Easy Pickups</h1>
+            <h1 className="text_header text-center">
+              Fish Delivery & Easy Pickups
+            </h1>
             <p className="text_para">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo fugit qui et libero commodi nihil quibusdam quis
@@ -95,7 +97,6 @@ const Home = () => {
           <ItemSalesCard />
         </div>
       </div>
-      <Footer />
     </>
   );
 };

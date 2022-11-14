@@ -15,13 +15,13 @@ const NavBar = (props) => {
           FarmLine
         </NavbarBrand>
         <div className="d-sm-flex d-none align-items-center header">
-          <NavLink href="" className="header_navs bold-text">
+          <NavLink href="/" className="header_navs bold-text">
             Home
           </NavLink>
           <NavLink href="/products" className="header_navs bold-text ">
             Products
           </NavLink>
-          <NavLink href="" className="header_navs bold-text ">
+          <NavLink href="/window" className="header_navs bold-text ">
             Window
           </NavLink>
           <div className="header_h-line"></div>
