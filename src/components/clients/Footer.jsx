@@ -38,7 +38,11 @@ const Footer = () => {
       </div>
       <div className="footer_bottom">
         <p>
-          copyright &copy; 2022 <Link to="">Farmline</Link> all right reserved
+          copyright &copy; 2022{" "}
+          <Link to="" className="text-white text-decoration-none">
+            ESOG
+          </Link>{" "}
+          all right reserved
         </p>
       </div>
     </div>

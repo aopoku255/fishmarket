@@ -12,7 +12,7 @@ const NavBar = (props) => {
     <Navbar className={props.bg}>
       <div className="container d-flex justify-content-between align-items-center">
         <NavbarBrand href="/" className="text-white">
-          FarmLine
+          ESOG
         </NavbarBrand>
         <div className="d-sm-flex d-none align-items-center header">
           <NavLink href="/" className="header_navs bold-text">

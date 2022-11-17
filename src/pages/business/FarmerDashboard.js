@@ -21,7 +21,7 @@ const FarmerDashboard = () => {
   return (
     <div className="d-flex farmer_dash">
       <div className="sidebar shadow-lg">
-        <div className="sidebar_logo">FarmLine</div>
+        <div className="sidebar_logo">ESOG</div>
         <IoMenu className="menu" size={20} />
         <div className="search_form">
           <input
