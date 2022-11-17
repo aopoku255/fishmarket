@@ -82,7 +82,9 @@ const Home = () => {
       <div className="card_container">
         <h1 className="deep_text text-uppercase">Don't miss this chance...!</h1>
         <h3 className="text_below">Buy Below The Normal Price</h3>
-        <button className="btn btn-light mt-4 btn_text">Open Window</button>
+        <Link to="/window" className="btn btn-light mt-4 btn_text">
+          Open Window
+        </Link>
       </div>
       <div className="container">
         <LargeText coloredText="Frequently" text="Purchased" />
