@@ -12,7 +12,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 
 const Cards = () => {
   return (
-    <Card className="rounded card_shadow">
+    <Card className="border-0 shadow">
       <img alt="Sample" src={fish} />
       <CardBody>
         <CardTitle tag="h5">Red Fish</CardTitle>
@@ -23,7 +23,7 @@ const Cards = () => {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis,
           eaque?
         </CardText>
-        <button className="btn btn-outline-secondary w-100 rounded-0 d-flex justify-content-center align-items-center">
+        <button className="btn btn-outline-success w-100 rounded-0 d-flex justify-content-center align-items-center">
           <span className="view_more mx-2">View More</span>
           <BsArrowRightCircle />
         </button>

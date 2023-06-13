@@ -12,30 +12,29 @@ import { BsArrowRightCircle, BsStarFill } from "react-icons/bs";
 
 const ItemSalesCard = () => {
   return (
-    <Card className="rounded shadow-lg">
-      <img alt="Sample" src={fish} />
-      <CardBody>
-        <h6 className="text-center">Tilapia</h6>
-
-        <CardText>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis,
-          eaque?
-        </CardText>
-        <div className="d-flex">
-          <BsStarFill size={10} color="F1C644" />
-          <BsStarFill size={10} color="F1C644" />
-          <BsStarFill size={10} color="F1C644" />
-          <BsStarFill size={10} color="F1C644" />
-          <BsStarFill size={10} color="F1C644" />
+    <div class="card border-0 shadow">
+      <img src={fish} class="card-img-top" alt="" />
+      <div class="card-body">
+        <h6 className="card-title lead text-uppercase">Red Fish</h6>
+        <p class="card-text mb-0">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <div className="rating mt-0">
+          <BsStarFill color="F1C644" className="star" />
+          <BsStarFill color="F1C644" className="star" />
+          <BsStarFill color="F1C644" className="star" />
+          <BsStarFill color="F1C644" className="star" />
+          <BsStarFill color="F1C644" className="star" />
         </div>
-        <div className="d-flex align-items-center justify-content-between">
-          <div className="">GH₵ 25.00</div>
-          <div className=" btn btn-outline-dark rounded-pill text-nowrap px-3">
+        <div className="d-flex align-items-end justify-content-between">
+          <div className="text-success">GH₵ 25.00</div>
+          <div className=" btn btn-outline-success rounded-pill text-nowrap px-3">
             Add to cart
           </div>
         </div>
-      </CardBody>
-    </Card>
+      </div>
+    </div>
   );
 };
 

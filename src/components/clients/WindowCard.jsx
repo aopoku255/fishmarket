@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../../assets/images/fish4.jpg";
-import { Progress } from "reactstrap";
+import { Modal, ModalBody, Progress } from "reactstrap";
 
 const WindowCard = () => {
   return (
@@ -10,21 +10,24 @@ const WindowCard = () => {
         alt=""
         className="img_card img-fluid rounded mx-auto d-block"
       />
-      <h5 className="window_card_title text-center mt-3">Item Name</h5>
+      <h5 className="window_card_title text-center mt-3 fs-4 fw-semibold">
+        Item Name
+      </h5>
       <Progress
-        className="rounded-pill progress_bar"
+        className="rounded-pill progress_bar opacity-75"
         value="75"
         barClassName="rounded-pill"
+        color="success"
       >
         75%
       </Progress>
       <div className="d-flex justify-content-between align-items-center mx-2 mt-2">
-        <p>00:00:00:00</p>
-        <p>20days</p>
+        <p className="text-success fw-bold">00:00:00:00</p>
+        <p className="text-success fw-bold">20days</p>
       </div>
       <div className="d-flex justify-content-between align-items-center mx-2 mt-2">
-        <div>GH₵ 59.99</div>
-        <div className="btn btn-primary">Pre-Order</div>
+        <div className="text-success fw-bold">GH₵ 59.99</div>
+        <div className="btn btn-success opacity-75">Pre-Order</div>
       </div>
     </div>
   );

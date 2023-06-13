@@ -2,7 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import google from "../assets/images/google.svg";
 import { RiEyeCloseFill, RiEyeFill } from "react-icons/ri";
+import { CiLock, CiMail } from "react-icons/ci";
 import { useState } from "react";
+import logo from "../assets/images/logo.jpeg";
+// import google from "../assets/images/google.svg";
+import { FiLock } from "react-icons/fi";
+import { Modal, ModalBody, ModalHeader } from "reactstrap";
 
 const Login = () => {
   const [isView, setIsView] = useState(false);
@@ -10,60 +15,91 @@ const Login = () => {
     setIsView(!isView);
   };
   return (
-    <div className="login_container">
-      <div className="login_card">
-        <div className="mt-4 mx-4">
-          <h3 className="logo">Logo</h3>
-          <p className="login_card__text text-center">
-            Sign in to your account
-          </p>
-        </div>
-        <form
-          action=""
-          className="form d-flex flex-column justify-content-center px-4"
-        >
-          <div>
+    <Modal isOpen={true} centered backdrop={false} fade={false}>
+      <ModalHeader className="bg-success text-white">
+        <h4 className="small">Sign in with your account</h4>
+      </ModalHeader>
+      <ModalBody>
+        <div className="container">
+          <img
+            src={logo}
+            width={100}
+            alt=""
+            className="d-block mx-auto mb-5"
+            style={{ pointerEvents: "none" }}
+          />
+          <h4 className="fw-bold text-secondary opacity-75 mb-3">
+            Welcome Back
+          </h4>
+          <div class="form-floating mb-3">
             <input
-              type="text"
-              placeholder="email address"
-              className="form_control border-0"
+              type="email"
+              class="form-control border border-success text-success"
+              id="floatingInput"
+              placeholder="name@example.com"
             />
+            <label
+              for="floatingInput"
+              className="text-success opacity-50 d-flex align-items-center justify-content-between"
+            >
+              <span>Email address</span>
+              <CiMail size={25} />
+            </label>
           </div>
-          <div className="password">
+          <div class="form-floating">
             <input
-              type={isView ? "text" : "password"}
+              type="password"
+              class="form-control border border-success text-success"
+              id="floatingPassword"
               placeholder="Password"
-              className="form_control border-0"
             />
-            {isView ? (
-              <RiEyeFill className="icon" onClick={handleClick} />
-            ) : (
-              <RiEyeCloseFill className="icon" onClick={handleClick} />
-            )}
+            <label
+              for="floatingInput"
+              className="text-success opacity-50 d-flex align-items-center justify-content-between"
+            >
+              <span>Password</span>
+              <CiLock size={25} />
+            </label>
           </div>
-          <div className="d-flex justify-content-between align-items-center">
-            <div className="d-flex align-items-center justify-content-center">
-              <input type="checkbox" className="border-0" />
-              <span className="small_text mx-1">Remember Me</span>
+          <div className="d-flex align-items-center justify-content-between my-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label
+                class="form-check-label text-secondary"
+                for="flexCheckDefault"
+              >
+                Show Password
+              </label>
             </div>
-            <Link to="" className="small_text forgotten">
+            <a href="" className="text-success">
               Forgotten password
-            </Link>
+            </a>
           </div>
-          <input type="submit" value="Sign in" className="submit mt-3" />
-          <button className="submit google_btn d-flex align-items-center justify-content-center">
-            <img src={google} alt="" width={10} className="mx-1" />
-            Continue with Google
+          <Link
+            to="/farmer-dashboard"
+            className="btn btn-success d-flex w-100 justify-content-center btn-lg"
+          >
+            Sign in
+          </Link>
+          <button className="btn btn-dark d-flex w-100 justify-content-center align-items-center btn-lg my-4">
+            <img src={google} alt="" width={20} />
+            <span className="mx-2">Continue with Google</span>
           </button>
-          <div className="text-center small_text mt-3">
-            Don't have account?{" "}
-            <Link to="/signup" className="text-white">
+
+          <p className="text-center text-secondary">
+            Don't have an account?{" "}
+            <Link to="/signup" className="text-success">
               Sign up
             </Link>
-          </div>
-        </form>
-      </div>
-    </div>
+          </p>
+        </div>
+      </ModalBody>
+    </Modal>
   );
 };
 

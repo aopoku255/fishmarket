@@ -3,7 +3,7 @@
     src: url(../fonts/Poppins-Regular.ttf);
 }
 *{
-    font-family: poppins;
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{
     --primary-green: #224020;
@@ -14,8 +14,8 @@
     position: relative;
 }
 .bg_color{
-    background-color: rgba(51, 128, 255, 0.15);
-    background-image: url(../images/fish.jpg);
+    /* background-color: rgba(51, 128, 255, 0.15); */
+    /* background-image: url("../images/bg.svg");s */
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: 20rem 0rem; */
@@ -85,7 +85,8 @@ a{
 .header .header_navs{
     margin: 0 1rem;
     cursor: pointer;
-    color: #fff;
+    color: #000;
+    font-size: 1.2rem;
 }
 .header_h-line{
     width: 1px;
@@ -127,6 +128,19 @@ a{
     color: var(--primary-green);
     font-weight: 600;
     border-radius: 4px;
+}
+
+.login_btn{
+color: #198754;
+border: 1px solid #198754;
+padding: 0.25rem 1.2rem;
+border-radius: 4px;
+
+}
+.login_btn:hover{
+color: #fff;
+background-color: #198754;
+
 }
 
 .btn_color:hover{
@@ -241,6 +255,11 @@ a{
     color: #fff;
 }
 
+/* .products_grid{
+    display: grid;
+    grid-template-columns: repeat(6, 14rem);
+} */
+
 
 .btn_text{
     font-weight: 900;
@@ -259,17 +278,17 @@ a{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(45deg, rgba(235, 2, 2, 0.513), rgba(105, 0, 243, 0.363));
+    /* background: linear-gradient(45deg, rgba(235, 2, 2, 0.513), rgba(105, 0, 243, 0.363)); */
 
 }
 
 .login_card{
     width: 25rem;
-    height: 25rem;
+    min-height: 25rem;
     /* background: linear-gradient(45deg, rgba(235, 2, 2, 0.513), rgba(105, 0, 243, 0.363)); */
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    box-shadow: 0 0 25px rgba(255, 192, 203, 0.465)
+    box-shadow: 0 0 25px rgba(19, 20, 19, 0.2)
 }
 
 .logo{
@@ -391,7 +410,7 @@ input{
 }
 
 .window_card{
-    background: linear-gradient(rgba(152, 215, 255, 1), rgba(199, 229, 249, 0));
+    background: linear-gradient(rgba(152, 215, 152, 0.5), rgba(199, 229, 249, 0));
     padding: 1rem 0;
     border-radius: 10px;
 }
@@ -408,9 +427,231 @@ input{
 
 .window_grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
+
+.rating .star{
+    margin: 0 0.1rem;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  color: #fff;
+  font-size: 14px;
+  background: #111;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #1e1e1e;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #1ed33c;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer .footer-newsletter {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px 0 0 4px;
+  text-align: left;
+}
+
+#footer .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #1bbd36;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type=submit]:hover {
+  background: #2ae149;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #1bbd36;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cart{
+    position: relative;
+}
+
+.cart_num{
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    color: #fff;
+    background-color: tomato;
+    min-width: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    min-height: 1.2rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    
+}
+
+.tablink{
+    padding: 0.95rem 1rem;
+    /* margin: 0 1rem; */
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.4s all;
+    
+}
+.tablink:hover{
+    padding: 0.95rem 1rem;
+    border-top: 1px solid #B5B5C3;
+    border-left: 1px solid #B5B5C3;
+    border-right: 1px solid #B5B5C3;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* margin: 0 1rem; */
+}
+
+.carousel_button{
+    position: absolute;
+   bottom: 15rem;
+   margin: 0 auto;
+   display: block;
+   text-align: center;
+   left: 48%;
+    
+}
+/* 
+.img-fluid{
+    mix-blend-mode: multiply;
+    
+} */
+
 
 @media (max-width: 996px) {
     .items_card{

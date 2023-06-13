@@ -9,6 +9,12 @@ import Window from "../pages/clients/Window";
 import Error from "../pages/Error";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
+import Sell from "../pages/clients/Sell";
+import ProductsLocation from "../pages/clients/ProductsLocation";
+import Upload from "../pages/business/Upload";
+import Orders from "../pages/business/Orders";
+import Company from "../pages/business/Company";
+import TodoApp from "../pages/clients/TodoApp";
 
 const Config = () => {
   return (
@@ -20,9 +26,15 @@ const Config = () => {
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/products" element={<Products />} />
         <Route exact path="/window" element={<Window />} />
+        <Route exact path="/sell" element={<Sell />} />
+        <Route exact path="/todo" element={<TodoApp />} />
+        <Route exact path="/products-location" element={<ProductsLocation />} />
         <Route exact path="*" element={<Error />} />
         {/* Farmer Dashboard */}
         <Route exact path="farmer-dashboard" element={<FarmerDashboard />} />
+        <Route exact path="farmer-upload" element={<Upload />} />
+        <Route exact path="farmer-orders" element={<Orders />} />
+        <Route exact path="farmer-company" element={<Company />} />
       </Routes>
     </Router>
   );

@@ -1,6 +1,6 @@
 
 .sidebar{
-    width: 30%;
+    width: 15%;
     position: relative;
     background-color: #fff;
     height: 100vh;
@@ -10,13 +10,17 @@
 }
 .main_body{
     
-    width: 70%;
-    margin: 0 auto;
-    background-color: #f4f4f4;
+    width: 60%;
+    /* margin: 0 auto; */
+    background-color: white;
    height: 100vh;
    overflow-y: scroll;
 }
-
+.right{
+    width: 20%;
+    overflow-y: scroll;
+    height: 100vh;
+}
 .menu{
     position: absolute;
     top: 3rem;
@@ -24,37 +28,50 @@
 }
 
 .farmer_navs{
-    width: 70%;
-    margin: 2rem auto;
+    width: 100%;
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
 .farmer_navs li{
     list-style: none;
-    width: 80%;
     margin: 1rem 0;
-    /* padding: 0.2rem 0; */ display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: left;
+    /* width: 100%; */
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    /* background-color: #0060FF; */
+
+}
+
+.farmer_navs li:hover{
+    background-color: #D5E6FB;
+    color: #0060FF;
 }
 
 .farmer_navs .farmer_links{
-    list-style-type: none;
+    /* list-style-type: none;
     width:100%;
     padding: 0.2rem 0; 
     border-radius: 4px;
-    transition: 1s all;
+    transition: 1s all; */
 
 }
 
-.farmer_navs .farmer_links:hover{
-    background-color: #D5E6FB;
-    color: #0060FF;
-
-}
 
 .farmer_links:focus{
-    background-color: #D5E6FB;
-    color: #0060FF;
 
     /* width: 100%; */
 }
@@ -91,7 +108,7 @@
 }
 
 .sidebar_footer{
-    width: 70%;
+    width: 100%;
     margin: auto;
     position: absolute;
     bottom: 1rem;
@@ -109,9 +126,12 @@
 }
 
 .profile_img{
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: #0060FF;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(../images/fish.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card_container_fluid{
@@ -129,7 +149,7 @@
     width: 95%;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 5rem auto 0 auto;
     gap: 2rem;
     /* padding: 2rem 0; */
@@ -142,6 +162,9 @@
 .sales_card{
     background-color: #fff;
     padding: 1rem 0 0 0;
+}
+.add_window{
+    cursor: pointer;
 }
 .sales_text{
     line-height: 5px;
@@ -188,8 +211,44 @@
 
 .status{
     color: #F2994A;
-    font-size: 12px;
-    padding: 0.25rem 0.5rem;
+    font-size: 16px;
+    padding: 0.5rem 0.5rem;
     background-color: rgba(242, 201, 76, 0.2);
     border-radius: 4px;
+}
+.completed{
+    color: #509803ba;
+    font-size: 16px;
+    padding: 0.5rem 0.5rem;
+    background-color: rgba(50, 131, 0, 0.2);
+    border-radius: 4px;
+}
+.ongoing{
+    color: #98030360;
+    font-size: 16px;
+    padding: 0.5rem 0.5rem;
+    background-color: rgba(131, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.image{
+    border: 1px dashed green;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.image-input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
 }
